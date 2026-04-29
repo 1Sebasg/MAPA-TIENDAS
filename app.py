@@ -37,7 +37,7 @@ def cargar_y_limpiar_datos():
     return df_final, df_errores
 
 def obtener_ruta_logo(nombre_cliente):
-    ruta = f"logos/{nombre_cliente}.jpg" 
+    ruta = f"Logos/{nombre_cliente}.png" 
     if os.path.exists(ruta):
         with open(ruta, "rb") as f:
             return f"data:image/jpeg;base64,{base64.b64encode(f.read()).decode()}"
