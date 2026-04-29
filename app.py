@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Mapa de Tiendas")
 @st.cache_data
 def cargar_y_limpiar_datos():
     # Cargamos tu archivo original
-    df = pd.read_excel("CLIENTES COMPLETOS.xlsm")
+    df = pd.read_excel("Clientes Completos.xlsx")
     
     # Aseguramos que Latitud y Longitud sean números
     df['Latitud'] = pd.to_numeric(df['Latitud'], errors='coerce')
