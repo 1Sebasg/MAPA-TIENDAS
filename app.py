@@ -89,7 +89,7 @@ try:
             data=df_final,
             get_icon="icon_data",
             get_size=4,
-            size_scale=12,
+            size_scale=8,
             get_position=["Longitud", "Latitud"],
             pickable=True,
         )
