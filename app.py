@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Mapa de Tiendas")
 @st.cache_data
 def cargar_y_limpiar_datos():
     # Asegúrate de que el nombre del archivo coincida con el de GitHub
-    df = pd.read_excel("CLIENTES COMPLETOS.xlsm") 
+    df = pd.read_excel("Clientes Completos.xlsx") 
     
     # Limpieza inicial
     df['Latitud'] = pd.to_numeric(df['Latitud'], errors='coerce')
