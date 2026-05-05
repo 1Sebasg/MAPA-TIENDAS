@@ -34,7 +34,7 @@ def cargar_y_limpiar_datos():
 def obtener_ruta_logo(nombre_cliente):
     # Intentamos con varias extensiones para evitar errores de mayúsculas/minúsculas
     for ext in [".png", ".PNG", ".jpg", ".JPG", ".jpeg"]:
-        ruta = f"logos/{nombre_cliente}{ext}" 
+        ruta = f"Logos/{nombre_cliente}{ext}" 
         if os.path.exists(ruta):
             with open(ruta, "rb") as f:
                 img_str = base64.b64encode(f.read()).decode()
