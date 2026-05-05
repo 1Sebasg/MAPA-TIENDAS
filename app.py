@@ -9,7 +9,7 @@ st.set_page_config(layout="wide", page_title="Mapa de Tiendas")
 # --- 1. CARGA Y LIMPIEZA PROFUNDA ---
 @st.cache_data
 def cargar_y_limpiar_datos():
-    df = pd.read_excel("CLIENTES COMPLETOS.xlsm")
+    df = pd.read_excel("Clientes Completos.xlsx")
     df['Latitud'] = pd.to_numeric(df['Latitud'], errors='coerce')
     df['Longitud'] = pd.to_numeric(df['Longitud'], errors='coerce')
     df = df.dropna(subset=['Latitud', 'Longitud'])
