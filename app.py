@@ -70,7 +70,7 @@ try:
     resumen.columns = ['Cliente', 'Total']
     st.sidebar.dataframe(resumen, hide_index=True)
 
-    if len(df_filtrado) <= limite_logos:
+if len(df_filtrado) <= limite_logos:
     # Solo aquí convertimos a base64 para ahorrar RAM
     df_filtrado['icon_data'] = df_filtrado['CLIENTE'].apply(lambda x: {
         "url": obtener_ruta_logo(x),
